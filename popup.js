@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const downloadIcon = document.createElement('span');
                 downloadIcon.className = 'download-icon';
                 downloadIcon.innerHTML = '📥'; // You can replace this with an actual icon if you prefer
-                downloadIcon.style.cursor = 'pointer';
+                
                 downloadIcon.addEventListener('click', () => {
                     const tabs = data.otherDeviceTabs[deviceName];
                     const sortedTabs = tabs.sort((a, b) => a.url.localeCompare(b.url));
